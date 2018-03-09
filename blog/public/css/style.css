@@ -1,0 +1,56 @@
+ html, body {
+                height: 100%;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                display: table;
+                font-weight: 100;
+                font-family: 'Lato';
+            }
+
+            .container {
+                text-align: center;
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .content {
+                text-align: center;
+                display: inline-block;
+            }
+
+            .title {
+                font-size: 96px;
+            }
+			table.skiny3 {
+				border-width: 1px;
+				border-style: solid;
+				border-color: #dedede #bababa #aaa #bababa;
+				-moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+				-webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+				box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;    
+				background-color: #f6f6f6;
+				background-image: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#eae8e8)); 
+				background-image: -webkit-linear-gradient(top, #f6f6f6, #eae8e8);
+				background-image: -moz-linear-gradient(top, #f6f6f6, #eae8e8);
+				background-image: -ms-linear-gradient(top, #f6f6f6, #eae8e8);
+				background-image: -o-linear-gradient(top, #f6f6f6, #eae8e8);
+				background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+				table-layout: fixed;
+			}
+
+			th.skiny3{
+				background-color:#5788af;
+				color:white;
+				width: 150px;
+			}
+			.linkstyle{
+				text-align:left;
+				padding: 10px;
+			}
