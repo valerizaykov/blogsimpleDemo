@@ -1,5 +1,11 @@
 # blogsimpleDemo
-simple Laravel project we can create/delete blogs in the create form we can pick an existing user it supports standart login provided by laravel and pagination.The purpose of the project is to give quick overview of laravel framework.
+##### Simple Laravel project we can create/delete blogs .
+##### In the create form we can pick an existing user ,it supports standart login provide by laravel and pagination.
+##### The purpose of the project is to give quick overview of laravel framework.
+# Used Technologies
+- Laravel
+- MySQL
+- HTML,JS,CSS
 # installation 
 we need xampp with php version 7.0 after cloning the repo search for SQL file in 
  /SQL_Import/forge.sql to import the database
