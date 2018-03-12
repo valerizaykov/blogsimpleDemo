@@ -9,9 +9,9 @@ class blog extends Controller
 {
    public function index()
    {
-		$blogs = \App\Blog::simplePaginate(3);
-		//po drugiq nachin ako e sus zaqwka vmesto sys model
-		/*$blogs = DB::table('blogs')
+	   $blogs = \App\Blog::simplePaginate(3);
+	   //the other way with query builder
+	   /*$blogs = DB::table('blogs')
             ->join('users', 'users.id', '=', 'blogs.user_id')
             ->select('users.name', 'blogs.*')
             ->get();*/
