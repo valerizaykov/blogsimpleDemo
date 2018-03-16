@@ -4,9 +4,9 @@ In the create form we can pick an existing user, it supports standart login prov
 also there is language picker allowing us to pick danish language.
 The purpose of the project is to give quick overview of laravel framework.
 # Used Technologies
-- Laravel
+- Laravel 5.6, PHP 7.0
 - MySQL
-- HTML, JS, CSS
+- HTML, JS, CSS, laravelCollective/html
 # Installation 
 - We need xampp with php version 7.0 
 - After cloning the repo search for SQL file in /SQL_Import/forge.sql to import the database
