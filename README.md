@@ -1,6 +1,7 @@
 # BlogSimpleDemo
-Simple Laravel project we can create/delete blogs.
-In the create form we can pick an existing user, it supports standart login provide by laravel and pagination.
+Simple Laravel project we can create/delete/edit blogs. 
+In the create form we can pick an existing user, it supports standart login provide by laravel and pagination 
+also there is language picker allowing us to pick danish language.
 The purpose of the project is to give quick overview of laravel framework.
 # Used Technologies
 - Laravel
