@@ -10,7 +10,7 @@ class blog extends Controller
    public function index()
    {
 		$blogs = \App\Blog::paginate(3);
-		//po drugiq nachin ako e sus zaqwka vmesto sys model
+		//the other way using query builder instead of model
 		/*$blogs = DB::table('blogs')
             ->join('users', 'users.id', '=', 'blogs.user_id')
             ->select('users.name', 'blogs.*')
