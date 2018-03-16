@@ -21,7 +21,7 @@ Route::get('/', function () {
 Route::get('/hello/{name?}', 'Hello@show');
 Route::get('user', 'User@index');
 Route::get('blog/create', 'Blog@create');
-Route::post('blog/store', 'Blog@store');
+Route::post('blog/store/{id?}', 'Blog@store')->name('store');
 //->middleware('UserForm');
 Route::get('user/delete/{id}', 'User@delete');
 Route::resource('photos', 'photoController');
@@ -29,8 +29,10 @@ Route::resource('photos', 'photoController');
 	return response('Hello World', 200)
                   ->header('Content-Type', 'text/plain');
 });*/
+Route::post('changelocale', 'Translation@changeLocale')->name('changelocale');
 Route::get('blog', 'Blog@index');
 Route::get('blog/delete/{id}', 'Blog@delete');
+Route::get('blog/edit/{id}', 'Blog@edit');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

@@ -14,6 +14,7 @@ class CheckBlog extends FormRequest
     public function authorize()
     {
         return true;
+
     }
 
     /**
@@ -24,7 +25,7 @@ class CheckBlog extends FormRequest
     public function rules()
     {
        return [
-			'title' => 'required|unique:blogs',
+			'title' => 'required|unique:blogs,title,'.$this->id,
 			'description' => 'required',	 
 		];
     }
@@ -32,6 +33,7 @@ class CheckBlog extends FormRequest
 	{
 		return [
 			'title.required' => 'The title field is required',
+			'title.unique' => 'The title has already been taken:'.$this->id,
 			//'password.required'  => 'A password is required',
 		];
 	}

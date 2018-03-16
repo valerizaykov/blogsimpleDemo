@@ -7,6 +7,11 @@ return [
 	'email_th' =>'email',
 	'created_at_th' =>'created at',
 	'create_user_link' => 'Create User',
-	'del_link' =>'Delete'
+	'title' => 'title',
+	'description' =>'description',
+	'user' =>'user',
+	'create_blog_link' => 'Create Blog',
+	'del_link' =>'Delete',
+	'Edit' =>'Edit'
 ];
 ?>

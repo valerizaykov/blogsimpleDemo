@@ -18,14 +18,21 @@
                 <div class="panel-heading">Create Blog</div>
 
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('store') }}">
+                    <form class="form-horizontal" method="POST" action="{{ route('store', $blogs->id) }}" >
+																					  
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
                             <label for="title" class="col-md-4 control-label">Title</label>
 
                             <div class="col-md-6">
-                                <input id="title" type="text" class="form-control" name="title" value="{{ old('title') }}">
+                                <input id="title" type="text" class="form-control" name="title"
+								
+								@if (!$errors->has('title')) 
+									value="{{$blogs->title}}"  
+								@else
+									value="{{ old('title') }}"
+								@endif>
 
                                 @if ($errors->has('title'))
                                     <span class="help-block">
@@ -39,8 +46,8 @@
                             <label for="description" class="col-md-4 control-label">Description</label>
 
                             <div class="col-md-6">
-                                <textarea id="description" class="form-control" name="description" rows="4"></textarea>
-
+                                <textarea id="description" class="form-control" name="description" rows="4" >{{$blogs->description}}  </textarea>
+							
                                 @if ($errors->has('description'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('description') }}</strong>
